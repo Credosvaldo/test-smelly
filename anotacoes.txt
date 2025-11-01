@@ -1,0 +1,17 @@
+5 Testes ao todo
+
+- 1: faz dois testes no mesmo metodo
+  * Eager Test
+
+- 2: if e 
+  * Lógica Condicional no Teste
+  * Eager Test
+  * dois testes no mesmo metodo (adimin e comum) 
+
+- 3: deveria verificar só a presença ou falta do id na linha 61
+  * Fragile Test
+
+- 4: teste falha silencionsamente se não ouver exeção
+
+- 5: test não implementado
+  * Developers Not Writing Tests

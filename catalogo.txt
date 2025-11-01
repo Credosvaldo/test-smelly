@@ -1,0 +1,12 @@
+Mystery Guest
+Fragile Test
+Lógica Condicional no Teste
+O Gigante (The Giant)
+O Dorminhoco (The Sleeper)
+O General (General Fixture)
+Roleta de Asserções (Assertion Roulette)
+Teste Ansioso (Eager Test)
+Asserção Redundante (Redundant Assertion)
+Developers Not Writing Tests
+
+
