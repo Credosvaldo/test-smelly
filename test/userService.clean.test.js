@@ -37,7 +37,7 @@ describe('UserService - Suíte de Testes com Smells', () => {
         expect(usuarioBuscado.status).toBe('ativo');
     });
 
-    test('deve desativar usuários se eles não forem administradores', () => {
+    test('deve desativar o usuario comum', () => {
         const usuarioComum = userService.createUser('Comum', 'comum@teste.com', 30);
 
         const resultado = userService.deactivateUser(usuarioComum.id);
@@ -47,7 +47,7 @@ describe('UserService - Suíte de Testes com Smells', () => {
         expect(usuarioAtualizado.status).toBe('inativo');
     });
 
-    test('deve desativar usuários se eles não forem administradores', () => {
+    test('não deve desativar usuario administrador', () => {
         const usuarioAdmin = userService.createUser('Admin', 'admin@teste.com', 40, true);
 
         const resultado = userService.deactivateUser(usuarioAdmin.id);
@@ -71,7 +71,7 @@ describe('UserService - Suíte de Testes com Smells', () => {
     test('deve falhar ao criar usuário menor de idade', () => {
         expect(() => {
             userService.createUser('Menor', 'menor@email.com', 17);
-        }).toThrowError('O usuário deve ser maior de idade.');
+        }).toThrow('O usuário deve ser maior de idade.');
     });
 
     test('deve retornar uma menssagem informando que não há usuários cadastrados', () => {
